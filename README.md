@@ -1,5 +1,5 @@
 # Learn-html-css-javascript
-* Cómo crear una aleta de color
+* Cómo crear una alerta de color
 * Cómo crear un contador
 * Cómo crear un carrusel de revisión
 * Cómo crear una barra de navegación responsiva
