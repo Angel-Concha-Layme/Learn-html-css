@@ -1,0 +1,89 @@
+
+/* MAIN */
+main {
+  min-height: 100vh;
+  /* 100% of the viewport height */
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  background: rgba(0, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn-hero {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  margin: 15px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.btn-hero:hover {
+  background: black;
+  color: white;
+}
+
+
+/* NAVBAR */
+nav {
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center{
+  width: 90%; 
+  max-width: 40%;
+  display: flex;
+  margin: 0 auto;
+  align-items: top;
+  justify-content: space-between;
+}
+
+nav h4{
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1rem;
+
+}
+
+nav a{
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 4rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+
+
+
+
+nav a:hover {
+  color: black;
+}
+
