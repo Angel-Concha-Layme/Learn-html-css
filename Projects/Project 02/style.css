@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+
+body{
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+} 
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calculator{
+  position:relative;
+  height: auto;
+  width: auto;
+  padding:20px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0);
+  background-color: white;
+
+}
+
+#display{
+  color: black;
+  margin:0 10px;
+  height: 160px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+#clear{
+  background-color: #ffd6d8;
+  color:black;
+}
+.btn-number{
+  background-color: #c3eaff;
+  color:black;
+}
+
+.btn-operator{
+  background-color: #ffcc99;
+  color: black;
+}
+.btn-equal{
+  background-color: #87db8e;
+  color: black;
+}
+
+.theme-toggler{
+  position: absolute; /* position the button in the top right corner */
+  top:30px; /* 30px from the top */
+  right: 30px; /* 30px from the right */
+  color:white;
+  cursor: pointer;
+  z-index: 1; /* make sure it does not overlap with the calculator */
+
+}
+.theme-toggler::before{
+  content: ""; /* moon icon */
+  position: absolute; /* position the icon in the center of the button */
+  height: 30px; /* same height as the button */
+  width: 30px; /* same width as the button */
+  top:50%; /* center vertically */
+  transform: translate(-50%, -50%); /* center horizontally */
+  border-radius: 50%; /* make it round */
+  background-color: #ffffff; /* same background color as the button */
+  z-index: -1; /* make sure it does not overlap with the calculator */
+}
+.theme-toggler .active{
+  color: #ffcc99; /* same background color as the button */
+}
+.theme-toggler .active::before{
+  content: "☀️"; /* sun icon */
+}
+
+button{
+  height: 80px;
+  width: 80px;
+  border: 0;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+
+.btn-equal{
+  height: 160px;
+  border-radius: 40px;
+}
+
+/*DARK THEME*/
+.dark {
+  background-color: #1e1e1e;
+}
+
+.dark #display{
+  color: white;
+}
+.dark #clear{
+  background-color: #ff4545;
+  color:black;
+}
+
+.dark .btn-number{
+  background-color: #27AE60;
+  color:black;
+}
+
+.dark .btn-operator{
+  background-color: #D4AC0D;
+  color:black;
+}
+
+.dark .btn-equal{
+  background-color: #2E86C1;
+  color:black;
+}
+/*MEDIA QUERIES*/
+
