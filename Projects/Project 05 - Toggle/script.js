@@ -1,5 +1,7 @@
 let toggleBtn = document.querySelector(".toggleBtn");
 let container = document.querySelector(".container");
-toggleBtn.onclick = function () {
+
+toggleBtn.addEventListener("click", function () {
   container.classList.toggle("active");
-};
+});
+
